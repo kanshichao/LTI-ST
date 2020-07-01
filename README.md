@@ -31,21 +31,21 @@ You can choose one of the **GoogleNet**, **Bn-Inception** and **ResNet-50** enco
 sudo pip3 install -r requirements.txt
 sudo python3 setup.py develop build
 ```
-###  Train and Test the feature embedding network on CUB-200-2011 with MS-Loss based on BN-Inception backbone
+###  Train and Test the feature embedding network on CUB-200-2011 with MS-Loss based on the BN-Inception backbone
 
 ```bash
 ./feature-embedding-scripts/run_cub_bninception.sh
 ```
 Trained models will be saved in the ./output-bninception-cub/ folder if using the default config.
 
-###  Train and Test the feature embedding network on CUB-200-2011 with MS-Loss based on ResNet50 backbone
+###  Train and Test the feature embedding network on CUB-200-2011 with MS-Loss based on the ResNet50 backbone
 
 ```bash
 ./feature-embedding-scripts/run_cub_resnet50.sh
 ```
 Trained models will be saved in the ./output-resnet50-cub/ folder if using the default config.
 
-###  Train and Test the feature embedding network on CUB-200-2011 with MS-Loss based on GoogleNet backbone
+###  Train and Test the feature embedding network on CUB-200-2011 with MS-Loss based on the GoogleNet backbone
 
 ```bash
 ./feature-embedding-scripts/run_cub_googlenet.sh
