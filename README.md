@@ -1,4 +1,4 @@
-# LTI-ST
+# Zero-Shot Learning to Index on Semantic Trees for Scalable Image Retrieval
 This code is mainly for understanding our TIP paper [Zero-Shot Learning to Index on Semantic Trees for Scalable Image Retrieval](https://github.com/kanshichao/LTI-ST). We will continue to maintain this project to further improve our work. Our results in the paper are produced based on the caffe framework, because more and more people are focusing on pytorch to do their studies, this project will based on the more widely used pytorch framework to show our ideas.
 
 <img src="img/LTI-ST-framework.png" width="65%" height="65%"> 
