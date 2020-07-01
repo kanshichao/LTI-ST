@@ -10,7 +10,7 @@ setup(
     name="ltisi_benchmark",
     version="0.1",
     author="Shichao Kan",
-    url="https://github.com/Anonymous",
+    url="https://github.com/kanshichao/LTI-ST",
     description="LTI-ST",
     packages=find_packages(exclude=("configs", "tests")),
     install_requires=requirements,
