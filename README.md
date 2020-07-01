@@ -10,7 +10,7 @@ In this study, we develop a new approach, called zero-shot learning to index on 
 
 ### Prepare the data and the pretrained model
 
-For the quickly and easily understand our method, we first take the small data set CUB as an example. For experiments of SOP and ImageNet, we will also complete the code in the future.
+For the quickly and easily understand our method, we first take the small data set **CUB** as an example. For experiments of **SOP** and **ImageNet**, we will also complete the code in the future.
 
 The following script will prepare the [CUB](http://www.vision.caltech.edu.s3-us-west-2.amazonaws.com/visipedia-data/CUB-200-2011/CUB_200_2011.tgz) dataset for training by downloading to the ./resource/datasets/ folder; which will then build the data list (train.txt test.txt):
 
@@ -21,7 +21,7 @@ The following script will prepare the [CUB](http://www.vision.caltech.edu.s3-us-
 The [SOP](https://arxiv.org/pdf/1511.06452.pdf) dataset can be downloaded from ftp://cs.stanford.edu/cs/cvgl/Stanford_Online_Products.zip, and the [ImageNet](https://arxiv.org/pdf/1409.0575.pdf) dataset can be downloaded from [this link](http://image-net.org/download).
  After preparing the training list and test list, by replacing the file path in the files of configs, then train the model following our examples and feature embedding results can be obtained.
 
-You can choose one of the GoogleNet, BnInception and ResNet-50 encoders. Download the imagenet pretrained model of
+You can choose one of the **GoogleNet**, **Bn-Inception** and **ResNet-50** encoders by downloading the imagenet pretrained model of
 [googlenet](https://download.pytorch.org/models/googlenet-1378be20.pth), [bninception](http://data.lip6.fr/cadene/pretrainedmodels/bn_inception-52deb4733.pth) and [resnet50](https://download.pytorch.org/models/resnet50-19c8e357.pth), and put them in the folder:  ~/.cache/torch/checkpoints/.
 
 
@@ -52,7 +52,7 @@ Trained models will be saved in the ./output-resnet50-cub/ folder if using the d
 ```
 Trained models will be saved in the ./output-googlenet-cub/ folder if using the default config.
 
-More backbones(e.g., ResNet-18, ResNet-34, ResNet-101, ResNet-152) can be experimented by changing the backbone name in the files of configs, and more embedding losses (e.g., ranked list loss, soft triplet loss, angular loss etc. can be experimented by changing the loss name in the defaults file of ltist_benchmark/config/).
+More backbones(e.g., **ResNet-18**, **ResNet-34**, **ResNet-101**, **ResNet-152**) can be experimented by changing the backbone name in the files of configs, and more embedding losses (e.g., ranked list loss, soft triplet loss, angular loss etc.) can be experimented by changing the loss name in the defaults file of ltist_benchmark/config/.
 
 ### Citation
 
