@@ -19,7 +19,7 @@ The following script will prepare the [CUB](http://www.vision.caltech.edu.s3-us-
 ```
 
 The [SOP](https://arxiv.org/pdf/1511.06452.pdf) dataset can be downloaded from ftp://cs.stanford.edu/cs/cvgl/Stanford_Online_Products.zip, and the [ImageNet](https://arxiv.org/pdf/1409.0575.pdf) dataset can be downloaded from [this link](http://image-net.org/download).
- After preparing the training list and test list, by replacing the file path in the files of configs, then train the model following our examples and feature embedding results can be obtained.
+ After preparing the training list and test list, replacing the file path in the files of configs, by training the model following our examples, and feature embedding results can be obtained.
 
 You can choose one of the **GoogleNet**, **Bn-Inception** and **ResNet-50** encoders by downloading the imagenet pretrained model of
 [googlenet](https://download.pytorch.org/models/googlenet-1378be20.pth), [bninception](http://data.lip6.fr/cadene/pretrainedmodels/bn_inception-52deb4733.pth) and [resnet50](https://download.pytorch.org/models/resnet50-19c8e357.pth), and put them in the folder:  ~/.cache/torch/checkpoints/.
@@ -31,21 +31,21 @@ You can choose one of the **GoogleNet**, **Bn-Inception** and **ResNet-50** enco
 sudo pip3 install -r requirements.txt
 sudo python3 setup.py develop build
 ```
-###  Train and Test on CUB-200-2011 with MS-Loss based on BN-Inception backbone
+###  Train and Test the feature embedding network on CUB-200-2011 with MS-Loss based on BN-Inception backbone
 
 ```bash
 ./feature-embedding-scripts/run_cub_bninception.sh
 ```
 Trained models will be saved in the ./output-bninception-cub/ folder if using the default config.
 
-###  Train and Test on CUB-200-2011 with MS-Loss based on ResNet50 backbone
+###  Train and Test the feature embedding network on CUB-200-2011 with MS-Loss based on ResNet50 backbone
 
 ```bash
 ./feature-embedding-scripts/run_cub_resnet50.sh
 ```
 Trained models will be saved in the ./output-resnet50-cub/ folder if using the default config.
 
-###  Train and Test on CUB-200-2011 with MS-Loss based on GoogleNet backbone
+###  Train and Test the feature embedding network on CUB-200-2011 with MS-Loss based on GoogleNet backbone
 
 ```bash
 ./feature-embedding-scripts/run_cub_googlenet.sh
@@ -53,6 +53,16 @@ Trained models will be saved in the ./output-resnet50-cub/ folder if using the d
 Trained models will be saved in the ./output-googlenet-cub/ folder if using the default config.
 
 More backbones(e.g., **ResNet-18**, **ResNet-34**, **ResNet-101**, **ResNet-152**) can be experimented by changing the backbone name in the files of configs, and more embedding losses (e.g., ranked list loss, soft triplet loss, angular loss etc.) can be experimented by changing the loss name in the defaults file of ltist_benchmark/config/.
+
+### Semantic tree encoding
+PyTorch code will be added in other times
+
+### Semantic tree decoding
+PyTorch code will be added in other times
+
+### End-to-end training examples
+The end-to-end training will joint the feature embedding, semantic tree encoding, label prediction network, index prediction network, and semantic tree decoding in an end-to-end manner. PyTorch code will be added in other times
+
 
 ### Citation
 
