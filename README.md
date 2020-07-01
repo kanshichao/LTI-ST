@@ -10,13 +10,18 @@ In this study, we develop a new approach, called zero-shot learning to index on 
 
 ### Prepare the data and the pretrained model
 
+For the quickly and easily understand our method, we first take the small data set CUB as an example. For experiments of SOP and ImageNet, we will also add the code future.
+
 The following script will prepare the [CUB](http://www.vision.caltech.edu.s3-us-west-2.amazonaws.com/visipedia-data/CUB-200-2011/CUB_200_2011.tgz) dataset for training by downloading to the ./resource/datasets/ folder; which will then build the data list (train.txt test.txt):
 
 ```bash
 ./feature-embedding-scripts/prepare_cub.sh
 ```
 
-To reproduce the results of our paper. Download the imagenet pretrained model of
+The [SOP](https://arxiv.org/pdf/1511.06452.pdf) dataset can be downloaded from [this link](ftp://cs.stanford.edu/cs/cvgl/Stanford_Online_Products.zip), and the [ImageNet](https://arxiv.org/pdf/1409.0575.pdf) dataset can be downloaded from [this link](http://image-net.org/download)
+After preparing the training list and test list, by replacing the file path in the files of configs, then train the model following our examples and feature embedding results can be obtained.
+
+You can choose one of the GoogleNet, BnInception and ResNet-50 encoders. Download the imagenet pretrained model of
 [googlenet](https://download.pytorch.org/models/googlenet-1378be20.pth), [bninception](http://data.lip6.fr/cadene/pretrainedmodels/bn_inception-52deb4733.pth) and [resnet50](https://download.pytorch.org/models/resnet50-19c8e357.pth), and put them in the folder:  ~/.cache/torch/checkpoints/.
 
 
