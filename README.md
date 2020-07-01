@@ -19,7 +19,7 @@ The following script will prepare the [CUB](http://www.vision.caltech.edu.s3-us-
 ```
 
 The [SOP](https://arxiv.org/pdf/1511.06452.pdf) dataset can be downloaded from ftp://cs.stanford.edu/cs/cvgl/Stanford_Online_Products.zip, and the [ImageNet](https://arxiv.org/pdf/1409.0575.pdf) dataset can be downloaded from [this link](http://image-net.org/download).
- After preparing the training list and test list, replacing the file path in the files of configs, by training the model following our examples, and feature embedding results can be obtained.
+ After preparing the training list and test list, replacing the file path in the files of configs, feature embedding results can be obtained by training the model following our examples and paprameter settings in our paper.
 
 You can choose one of the **GoogleNet**, **Bn-Inception** and **ResNet-50** encoders by downloading the imagenet pretrained model of
 [googlenet](https://download.pytorch.org/models/googlenet-1378be20.pth), [bninception](http://data.lip6.fr/cadene/pretrainedmodels/bn_inception-52deb4733.pth) and [resnet50](https://download.pytorch.org/models/resnet50-19c8e357.pth), and put them in the folder:  ~/.cache/torch/checkpoints/.
