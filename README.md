@@ -52,7 +52,7 @@ Trained models will be saved in the ./output-resnet50-cub/ folder if using the d
 ```
 Trained models will be saved in the ./output-googlenet-cub/ folder if using the default config.
 
-More backbones(e.g., **ResNet-18**, **ResNet-34**, **ResNet-101**, **ResNet-152**) can be experimented by changing the backbone name in the files of configs, and more embedding losses (e.g., ranked list loss, soft triplet loss, angular loss etc.) can be experimented by changing the loss name in the defaults file of ltist_benchmark/config/.
+More backbones (e.g., **ResNet-18**, **ResNet-34**, **ResNet-101**, **ResNet-152**) can be experimented by changing the backbone name in the files of configs, and more embedding losses (e.g., ranked list loss, soft triplet loss, angular loss etc.) can be experimented by changing the loss name in the defaults file of ltist_benchmark/config/.
 
 ### Semantic tree encoding
 PyTorch code will be added in other times
