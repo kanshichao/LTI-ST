@@ -64,7 +64,7 @@ PyTorch code will be added in other times
 The end-to-end training will joint the feature embedding, semantic tree encoding, label prediction network, index prediction network, and semantic tree decoding in an end-to-end manner. PyTorch code will be added in other times
 
 ### Scalable Image Retrieval
-PyTorch code will be added in other times
+Example code will be added in other times
 
 ### Citation
 
