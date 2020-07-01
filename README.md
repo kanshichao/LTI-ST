@@ -10,7 +10,7 @@ In this study, we develop a new approach, called zero-shot learning to index on 
 
 ### Prepare the data and the pretrained model
 
-For the quickly and easily understand our method, we first take the small data set CUB as an example. For experiments of SOP and ImageNet, we will also add the code future.
+For the quickly and easily understand our method, we first take the small data set CUB as an example. For experiments of SOP and ImageNet, we will also complete the code in the future.
 
 The following script will prepare the [CUB](http://www.vision.caltech.edu.s3-us-west-2.amazonaws.com/visipedia-data/CUB-200-2011/CUB_200_2011.tgz) dataset for training by downloading to the ./resource/datasets/ folder; which will then build the data list (train.txt test.txt):
 
