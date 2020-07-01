@@ -31,3 +31,45 @@ You can choose one of the GoogleNet, BnInception and ResNet-50 encoders. Downloa
 sudo pip3 install -r requirements.txt
 sudo python3 setup.py develop build
 ```
+###  Train and Test on CUB-200-2011 with MS-Loss based on BN-Inception backbone
+
+```bash
+./feature-embedding-scripts/run_cub_bninception.sh
+```
+Trained models will be saved in the ./output-bninception-cub/ folder if using the default config.
+
+###  Train and Test on CUB-200-2011 with MS-Loss based on ResNet50 backbone
+
+```bash
+./feature-embedding-scripts/run_cub_resnet50.sh
+```
+Trained models will be saved in the ./output-resnet50-cub/ folder if using the default config.
+
+###  Train and Test on CUB-200-2011 with MS-Loss based on GoogleNet backbone
+
+```bash
+./feature-embedding-scripts/run_cub_googlenet.sh
+```
+Trained models will be saved in the ./output-googlenet-cub/ folder if using the default config.
+
+More backbones(e.g., ResNet-18, ResNet-34, ResNet-101, ResNet-152) can be experimented by changing the backbone name in the files of configs, and more embedding losses (e.g., ranked list loss, soft triplet loss, angular loss etc. can be experimented by changing the loss name in the defaults file of ltist_benchmark/config/).
+
+### Citation
+
+If you use this method or this code in your research, please cite as:
+
+    @inproceedings{TIP-Shichao-2020,
+    title={Zero-Shot Learning to Index on Semantic Trees for Scalable Image Retrieval},
+    author={Shichao Kan, Yi Cen, Yigang Cen, Mladenovic Vladimir, Yang Li, and Zhihai He},
+    booktitle={},
+    pages={},
+    year={2020}
+    }
+
+### Acknowledgments
+This code is written based on the framework of [MS-Loss](https://github.com/MalongTech/research-ms-loss), we are really grateful to the authors of the MS paper to release their code for academic research / non-commercial use. We also thank the following helpful implementtaions on [histogram](https://github.com/valerystrizh/pytorch-histogram-loss), [proxynca](https://github.com/dichotomies/proxy-nca), [n-pair and angular](https://github.com/leeesangwon/PyTorch-Image-Retrieval), [siamese-triplet](https://github.com/adambielski/siamese-triplet), [clustering](https://github.com/shaoniangu/ClusterLoss-Pytorch-ReID) for the implementation of more feature embedding losses.
+
+### License
+This code is released for academic research / non-commercial use only. If you wish to use for commercial purposes, please contact [Shichao Kan](https://kanshichao.github.io) by email kanshichao10281078@126.com.
+
+
