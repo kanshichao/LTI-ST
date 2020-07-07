@@ -2,7 +2,7 @@
 clear;
 clc;
 close all;
-%%
+%% Using examples
 % top-down hierarchical clustering
 
 CodebookPath = 'codebook/';
@@ -10,7 +10,7 @@ IndexPath = 'index/';
 load('../ebay_features/train_feature.mat');
 dim = size(features,2);
 split = 1; % split is always set as 1 for our TIP paper
-% K = [1024]; % for codebook
+% K = [256]; % for codebook
 K = [2,2,2,2,2,2,2,2]; % for tree, and the number of child node on each layer
 SplitNum = 1;
 Thresh = 0;

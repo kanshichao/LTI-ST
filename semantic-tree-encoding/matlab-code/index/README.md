@@ -1,0 +1,1 @@
+# Store Initial Indexes with Euclidean distance
