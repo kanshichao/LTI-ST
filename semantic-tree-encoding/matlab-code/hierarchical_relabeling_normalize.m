@@ -9,7 +9,7 @@ split = 1;
 K = [2,2,2,2,2,2,2,2];
 
 height = length(K);
-Image_path = ['/home/visitor/SSD/data/Stanford_Online_Products'];
+Image_path = ['data/Stanford_Online_Products'];
 img_train_path = [Image_path,'/Ebay_train.txt'];
 [image_ids, class_ids, superclass_ids, path_list] = ...
     textread(img_train_path, '%d %d %d %s',...
