@@ -58,7 +58,7 @@ More backbones (e.g., **ResNet-18**, **ResNet-34**, **ResNet-101**, **ResNet-152
 
 (1) Building tree by running the following script
 ```bash
-matlab semantic-tree-encoding/matlab-code/IndexTree_main.m
+matlab -nodesktop -nosplash semantic-tree-encoding/matlab-code/IndexTree_main.m
 ```
 
 (2) Labeling schemes
@@ -66,13 +66,13 @@ matlab semantic-tree-encoding/matlab-code/IndexTree_main.m
 a) hard and soft labeling
 
 ```bash
-matlab semantic-tree-encoding/matlab-code/hierarchical_relabeling_normalize.m
+matlab -nodesktop -nosplash semantic-tree-encoding/matlab-code/hierarchical_relabeling_normalize.m
 ```
 
 b) ranked labeling
 
 ```bash
-matlab semantic-tree-encoding/matlab-code/ranked_labeling_scheme.m
+matlab -nodesktop -nosplash semantic-tree-encoding/matlab-code/ranked_labeling_scheme.m
 ```
 
 PyTorch code will be added in other times
