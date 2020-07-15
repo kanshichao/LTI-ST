@@ -75,6 +75,7 @@ b) ranked labeling
 matlab -nodesktop -nosplash semantic-tree-encoding/matlab-code/ranked_labeling_scheme.m
 ```
 
+After generating semantic tree labels, they will be used to guide the index learning process.
 PyTorch code will be added in other times
 
 ### Semantic tree decoding
