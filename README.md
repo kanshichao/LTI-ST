@@ -63,13 +63,13 @@ matlab semantic-tree-encoding/matlab-code/IndexTree_main.m
 
 (2) Labeling schemes
 
-hard and soft labeling
+a) hard and soft labeling
 
 ```bash
 matlab semantic-tree-encoding/matlab-code/hierarchical_relabeling_normalize.m
 ```
 
-ranked labeling
+b) ranked labeling
 
 ```bash
 matlab semantic-tree-encoding/matlab-code/ranked_labeling_scheme.m
