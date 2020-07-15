@@ -55,6 +55,26 @@ Trained models will be saved in the ./output-googlenet-cub/ folder if using the 
 More backbones (e.g., **ResNet-18**, **ResNet-34**, **ResNet-101**, **ResNet-152**) can be experimented by changing the backbone name in the files of configs, and more embedding losses (e.g., ranked list loss, soft triplet loss, angular loss etc.) can be experimented by changing the loss name in the defaults file of ltist_benchmark/config/.
 
 ### Semantic tree encoding
+
+(1) Building tree by running the following script
+```bash
+matlab semantic-tree-encoding/matlab-code/IndexTree_main.m
+```
+
+(2) Labeling schemes
+
+hard and soft labeling
+
+```bash
+matlab semantic-tree-encoding/matlab-code/hierarchical_relabeling_normalize.m
+```
+
+ranked labeling
+
+```bash
+matlab semantic-tree-encoding/matlab-code/ranked_labeling_scheme.m
+```
+
 PyTorch code will be added in other times
 
 ### Semantic tree decoding
