@@ -10,7 +10,7 @@ In this study, we develop a new approach, called zero-shot learning to index on 
 
 ### Prepare the data and the pretrained model
 
-For the quickly and easily understand our method, we first take the small data set **CUB** as an example of learning feature embedding. For experiments on the **SOP** and **ImageNet** in our paper, you can also conduct by following our instructions.
+For the quickly and easily understand our method, we first take the small data set **CUB** as an example of learning feature embedding. Experiments on the **SOP** and **ImageNet** in our paper can be conducted by following our instructions.
 
 The following script will prepare the [CUB](http://www.vision.caltech.edu.s3-us-west-2.amazonaws.com/visipedia-data/CUB-200-2011/CUB_200_2011.tgz) dataset for training by downloading to the ./resource/datasets/ folder; which will then build the data list (train.txt test.txt):
 
